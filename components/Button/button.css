@@ -1,1 +1,34 @@
-.
+
+/*__Botão sólido azul___*/
+
+.primary-button {
+    margin: 0.5em;    
+    padding: 0.8em 2em;
+    border-radius: 40px; 
+    border-style: solid;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-color: #008af5;
+    background-color: #008af5;
+    color: #fff;
+}
+
+/*__Botão sólido cinza___*/
+
+.secundary-button {
+    margin: 0.5em;    
+    padding: 0.8em 2em;
+    border-radius: 40px; 
+    border-style: solid;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-color: #37414b;
+    background-color: #37414b;
+    color: #fff;
+}
+
+/*__Botão vazado___*/
+
+.outline-button
