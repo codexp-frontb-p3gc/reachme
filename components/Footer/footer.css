@@ -11,8 +11,7 @@ footer {
 
 }
 
-
-.logo-footer {
+.footer__logo {
     display: block;
     margin: 0;
     padding: 2rem 0 1rem 0;
@@ -55,12 +54,15 @@ footer {
 /* Media Queries */
 
 @media(min-width: 768px) {
+
+    /* CSS FOOTER */
+
     footer {
         display: flex;
         align-items: flex-end;
     }
 
-    .logo-footer {
+    .footer__logo {
         padding: 2rem 0 1rem 2rem;
         text-align: left;
         flex-grow: 1;
@@ -78,13 +80,16 @@ footer {
 }
 
 @media(min-width: 992px) {
+
+    /* CSS FOOTER */
+    
     footer {
         display: flex;
         align-items: flex-end;
         justify-content: center;
     }
 
-    .logo-footer {
+    .footer__logo {
         padding: 2rem 0 1rem 2rem;
         text-align: left;
         margin: 0 10em 0 0;
