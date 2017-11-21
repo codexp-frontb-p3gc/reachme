@@ -1,6 +1,5 @@
 
-/*__Botão sólido azul___*/
-
+/*__Botão sólido azul__*/
 .primary-button {
     margin: 0.5em;    
     padding: 0.8em 2em;
@@ -15,7 +14,7 @@
     color: #fff;
 }
 
-/*__Botão sólido cinza___*/
+/*__Botão sólido cinza__*/
 
 .secundary-button {
     margin: 0.5em;    
@@ -31,7 +30,7 @@
     color: #fff;
 }
 
-/*__Botão vazado___*/
+/*__Botão vazado__*/
 
 .outline-button {
 margin: 0.5em;    
@@ -46,6 +45,8 @@ border-color: #f0f5f9;
 background-color: #fff;
 color: #008af5;
 }
+
+/*__Botão vazado com letras cinzas__*/
 
 .outline-button-gray {
     margin: 0.5em;    
