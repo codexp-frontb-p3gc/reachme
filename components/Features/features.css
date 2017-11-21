@@ -8,10 +8,23 @@ body, html {
     font-family: 'Rubik', sans-serif;
 }
 
+.big-feature {
+    background-image: url('analytcs_FUNDO_W_1440xH948.jpg');
+    background-position: bottom; 
+    background-size: 300%;
+    background-position-x: 70%;
+    background-repeat: no-repeat;
+}
+
+.feature-brand{
+    margin-bottom: 10rem;
+}
+
 .feature {
     display: flex;
     flex-flow: column;
     padding: 2rem 2rem 1.5rem 1.5rem;
+    margin-bottom: 5rem;
 }    
 
 /* elements */
@@ -66,13 +79,25 @@ body, html {
 }
 
 @media(min-width: 768px) {
-    .feature {
+    /* .feature {
         display: flex;
         flex-flow: row;
         padding: 2rem 2rem 1.5rem 1.5rem;
-    }    
+    }     */
 
-    .feature__text p{
+    .big-feature{
+        background-size: 100%;
+    }
+
+    .feature {
+        margin: 5rem 0;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 0 0 2rem;
+    }
+
+
+    .feature__text {
         max-width: 50%;
         margin-right: 10%;
     }
@@ -84,6 +109,11 @@ body, html {
         transform: translateX(0);
     }
     
+    .feature--reverse{
+        flex-direction: row-reverse;
+        padding: 0 2rem 0 0;
+    }
+
 }
 
 @media(min-width: 992px) {
@@ -103,4 +133,23 @@ body, html {
         margin-right: 5%;
         margin-left: 15%;
     }
+}
+
+
+
+.feature__icon--start {
+    align-self: flex-start;
+    width: 80%;
+    margin-top: 2.5rem;
+    transform: translateX(-1.5rem);
+}
+
+/* tablet and desktop */
+@media (min-width: 768px) {
+    
+    .feature--reverse{
+        flex-direction: row-reverse;
+        padding: 0 2rem 0 0;
+    }
+    
 }
