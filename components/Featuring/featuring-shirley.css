@@ -66,11 +66,11 @@ body, html {
 
 @media (min-width: 768px) {
 .feature--lighter-gray {
-    background-size: 80%;
-    background-position-x: 180%;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: 85%;
+    height: 55%;
 } 
 
 .content {
