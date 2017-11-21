@@ -1,1 +1,117 @@
-.
+/* Início do navbar - Mobile */
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+navbar {
+    box-sizing: border-box;
+    padding: 0 1rem;
+    height: 4.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #a4b2bb;
+}
+
+.navbar-logo {
+    height: 40%;
+}
+
+.navbar-hamburguer {
+    height: 60%;
+}
+
+.navbar-pages {
+    display: none;
+}
+
+.secundary-button-grey{
+    display: none;
+}
+
+.secundary-button-blue{
+    display: none;
+}
+
+/* Início do navbar - Tablet */
+
+@media (min-width: 768px) {
+    .secundary-button-grey {
+        display: inline;
+        margin: 0.5em;    
+        padding: 0.8em 2em;
+        border-radius: 40px; 
+        border: 1.5px solid #e6edfb;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        color: #a4b2bb;
+        text-decoration:none;
+    }
+
+    .secundary-button-blue {
+        display: inline;
+        margin: 0.5em;    
+        padding: 0.8em 2em;
+        border-radius: 40px; 
+        border: 1.5px solid #e6edfb;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        color: #008af5;
+        text-decoration:none;
+    }
+
+    navbar {
+        justify-content: flex-end;
+    }
+    
+    .navbar-logo {
+        box-sizing: border-box;
+        padding: 0 1rem;
+        position: absolute;
+        height: 30px;
+        left: 0;
+
+    }
+
+/* Início do navbar - Dektop */
+
+    @media (min-width: 992px) {
+    .navbar-pages {
+         display: inline;
+         padding: 0;
+         margin: 0;
+         list-style: none;   
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+    }
+          
+    .navbar-pages li {
+        display: inline-block;
+        margin: 0.3rem;
+    }
+
+    .navbar-pages a {
+        text-decoration: none;
+        padding-bottom: 1.5rem;
+        color: #a4b2bb;
+        font-size: 12px;
+        text-transform:uppercase;  
+    }
+    
+    .navbar-pages a:active {
+        box-sizing: border-box;
+        color: #37414b; 
+        font-weight: 500;
+        border-bottom: 3px solid #0080f5;
+    }
+}
+
+/* Fim do Navbar */
