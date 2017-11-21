@@ -47,4 +47,30 @@ footer {
 
 .footer__social-medias-icon {
     height: 1.2rem;
+    color
+}
+
+/* Media Queries */
+
+@media(min-width: 768px) {
+    footer {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .logo-footer {
+        padding: 2rem 0 1rem 2rem;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .footer__links li {
+       display: inline;
+    }    
+
+    .footer__social-medias {
+        justify-content: flex-end;
+        padding: 0;
+        margin: 1.7em;
+    }
 }
