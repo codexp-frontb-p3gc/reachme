@@ -8,22 +8,125 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Reach.me</title>
 </head>
-<body>
+<body>  
+    <!-- Início do Navbar -->
         <navbar>
-                <img class="navbar-logo" src="header_LOGO_alpha_W_H19.jpg" alt="logo escrito reach.me em azul">
-                <ul class="navbar-pages">
-                    <li><a  href="features.html">Features</a></li>
-                    <li><a  href="pricing.html">Pricing</a></li>
-                    <li><a  href="aboutus.html">About Us</a></li>
-                    <li><a  href="blog.html">Blog</a></li>
-                    <li><a  href="contactus.html">Contact Us</a></li>
-                </ul>
-                <a class="secundary-button-grey" href="">Log in</a>
-                <a class="secundary-button-blue" href="">Get Started</a>  
-                <img class="navbar-hamburguer" src="hamburger.png" alt="imagem de três linhas paralelas com link para menu hamburguer">
-            </navbar>
+            <img class="navbar-logo" src="header_LOGO_alpha_W_H19.jpg" alt="logo escrito reach.me em azul">
+            <ul class="navbar-pages">
+                <li><a  href="features.html">Features</a></li>
+                <li><a  href="pricing.html">Pricing</a></li>
+                <li><a  href="aboutus.html">About Us</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a  href="contactus.html">Contact Us</a></li>
+            </ul>
+            <a class="secundary-button-grey" href="">Log in</a>
+            <a class="secundary-button-blue" href="">Get Started</a>  
+            <img class="navbar-hamburguer" src="hamburger.png" alt="imagem de três linhas paralelas com link para menu hamburguer">
+        </navbar>
+    <!-- Início do Hero -->
+        <div class="hero">
+            <h1>Reach.me Features</h1>
+            <p class="hero-texto">Schedule, Automate, Measure and Monitor all your social media accounts from a single dashboard</p>
+            <!-- tentei fazer direito e não consegui, daí, apliquei aqui embaixo o botão todo--><a href="./components/Button/button.html"></a>
+            <button type="submit" class="primary-button">Learn More</button>
+            <img clas="hero-image-app" src="hero_IMG_W768xH373_.jpg">
+        </div>
+    <!-- Início da seção de features -->   
+        <section class="feature feature--lighter-gray">
+            <div class="feature__content">
+                <h2 class="feature__title">Social Publishing</h2>
+                <p class="feature__text"> Draft, schedule and post messages across all your social channels. Shorten links with <a href="">tr.im</a>, attach photos and target specific audiences.<p>
+                <p class="feature__text">Use our Patent-Pending  <a href="">Hopper</a> to deliver content do your audience at the best time.</p>
+                <a href="" class="primary-button">Get Started</a>
+            </div>
+            <img class="feature__icon feature__icon--end feature__icon-social-publishing" 
+            srcset="icon-social-publishing-small.png 214w, icon-social-publishing-medium.png 299w, icon-social-publishing-large.png 467w" 
+            sizes="(min-width: 320px) 100w, 25vw" 
+            src="icon-social-publishing-large.png" 
+            alt="Screen of app directory feature">
+        </section>
+        <section class="feature feature--reverse feature--darker-gray">
+            <div class="feature__content">
+                <h2 class="feature__title">Engagement</h2>
+                <p class="feature__text">See a full stream of messages coming into your brand across all your connected social profiles.<p>
+                <a href="" class="primary-button">Get Started</a>
+            </div>
+            <img class="feature__icon feature__icon--start" 
+            srcset="icon-engagement-small.png 214w, icon-engagement-medium.png 299w, icon-engagement-large.png 467w" 
+            sizes="(min-width: 320px) 100w, 30vw" 
+            src="icon-engagement-large.png" 
+            alt="Screen of app directory feature">
+        </section>
+        <section class="big-feature">
+            <div class="feature">
+                <div class="feature-content--brand">
+                    <h2 class="feature__title">Brand Monitoring</h2>
+                    <p class="feature__text">Set up keyword related to your brand and monitor all social channels. Have results delivered right to the reach.me inbox, and see the frequency of your brand´s keywords in your analytics report.</p>
+                    <a href="" class="primary-button">Get Started</a>
+                </div>
+            </div>
+            <div class="feature feature--reverse">
+                <div class="feature-content">
+                    <h2 class="feature__title">Analytics</h2>
+                    <p class="feature__text">Get insight into profile and individual posts, as well as trends across social media. All analytics are packaged into beatiful, presentation-ready reports that can be exported into CSVs and PDFs.</p>
+                    <a href="" class="primary-button">Get Started</a>
+                </div>
+            <img class="feature__big-icon feature__icon--start" 
+                srcset="DSK_imac_small.png 206w, DSK_imac_medium.png 361w, DSK_imac_large.png 620w" 
+                sizes="(min-width: 320px) 50w, 50vw" 
+                src="DSK_imac_large.png" 
+                alt="Screen of app directory feature">
+            </div>
+        </section>
+        <section class="feature">
+            <div class="feature__content">
+                <h2 class="feature__title">Collaboration</h2>
+                <p class="feature__text">Turn any in-bound message into a task that can be routed to the appropriate team member. Live activy updates prevent your team from replying to the same message twice.
+                </p>
+                <a href="" class="primary-button">Get Started</a>
+            </div>
+            <img class="feature__icon feature__icon--end" 
+                srcset="icon-collaboration-small.png 214w, icon-collaboration-medium.png 299w, icon-collaboration-large.png 467w" 
+                sizes="(min-width: 320px) 100w, 30vw" 
+                src="icon-collaboration-large.png" 
+                alt="Screen of app directory feature">
+        </section>
+        <section class="feature feature--reverse feature--lighter-gray">
+            <div class="feature__content">
+                <h2 class="feature__title">App DirectoryApp Directory</h2>
+                <p class="feature__text">The reach.me App Directory is a collection of extensions and applications brands
+                        can add to their dashbord to create a customized experience and extend reach beyond
+                        just the traditional social channels.<p>
+                <a href="" class="primary-button">Get Started</a>
+            </div>
+            <img class="feature__icon feature__icon--center" 
+            srcset="icon-app-directory-small.png 214w, icon-app-directory-medium.png 299w, icon-app-directory-large.png 467w" 
+            sizes="(min-width: 320px) 100w, 30vw" 
+            src="icon-app-directory-large.png" 
+            alt="Screen of app directory feature">
+        </section>
+    <!-- Início da seção Get Started -->  
+        <section class="get-started">
+            <h2>Get Started Today</h2>
+            <p>Don't waste another moment frustrated, reach more people today!</p>
+            <a href="" class="secundary-button">Get Started</a>
+        </section> 
+    <!-- Início do Footer -->  
+        <footer>
+            <div class="footer__logo">
+                <img src="logo-footer.png"  alt="logo reach me">
+            </div>
+            <ul class="footer__links">
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Opt-Out</li>
+                <li>Contact</li>
+            </ul>
 
-            
-    
+            <ul class="footer__social-medias">
+                <li><img src="facebook.png" class="footer__social-medias-icon" alt="facebook icon"></li>
+                <li><img src="twitter.png" class="footer__social-medias-icon" alt="twitter icon"></li>
+            </ul>
+        </footer> 
 </body>
 </html>
