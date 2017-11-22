@@ -32,13 +32,10 @@ h1{
     margin-top: -0.7rem;
 }
 .hero-image-app{
-    max-width: 40%; /*não está funcionando muito bem*/
-    max-height: 23.5rem; /*não está funcionando muito bem*/
+    height: 24rem; 
     position: absolute;
-    align-self: flex-end;
+    bottom: 0;
 }
-
-/* sei que não era pra isso estar aqui abaixo, mas não consegui aplicar o botão direto, se vocês conseguirem, arrancam daqui e me ensinam, por favor?*/
 .primary-button {
     margin: 0.5em;    
     padding: 0.8em 2em;
@@ -52,95 +49,74 @@ h1{
     color: #fff;
 }
 
-/* .hero-image-bg{
-    width: 100%;
-    max-height: 30rem;
-    position: relative;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: initial;
-    flex-wrap: wrap;
-} 
-
-@media(min-width: 768px) {
-    /* .feature {
-        display: flex;
-        flex-flow: row;
-        padding: 2rem 2rem 1.5rem 1.5rem;
-    }     
-    .hero-image-app{
-        max-width: 90%; 
-        max-height: 20rem; 
-        position: relative; 
-        object-position: 0; 
-        padding-bottom: 0; 
-
-    .big-feature{
-        background-size: 100%;
-    }
-
-    .feature {
-        margin: 5rem 0;
-        flex-direction: row;
-        align-items: center;
-        padding: 0 0 0 2rem;
-    }
-
-
-    .feature__text {
-        max-width: 50%;
-        margin-right: 10%;
-    }
-
-    .feature__icon--end{
-        align-self: auto;
+@media(max-width: 768px) {
+    .hero{
+        height: 25rem;
         width: 100%;
-        margin-top: 0;
-        transform: translateX(0);
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+        align-items: center;  
+        /*background-color: rgb(209, 236, 135);  /*cor só pra testar o entendimento, hehehe*/    
+        background-image: url(hero_BG_W_1440xH568.jpg);
+        background-position: right bottom; 
+        background-repeat: repeat-x;
+        position: relative;
+    }    
+    .hero-image-app{
+    max-height: 15rem;
+    position: absolute;
+    bottom: 0;
     }
-    
-    .feature--reverse{
-        flex-direction: row-reverse;
-        padding: 0 2rem 0 0;
+    .hero-texto{
+        font-family: 'Verdana', sans-serif;
+        font-size: 0.6rem;
+        color: #A4B2BB;
+        max-width: 20rem;
+        line-height: 150%;
+        text-align: center;
+        margin-top: -0.7rem;
     }
-
+    h1{
+        font-family: 'Rubik', sans-serif;
+        font-size: 2rem;
+        color: #000000;
+        letter-spacing: 0.1rem;
+        text-align: center;
+    }
 }
 
-@media(min-width: 992px) {
-    .feature__icon--end{
-        width: auto;
-        margin-right: 15%;
-        
+@media(max-width: 450px) {
+    .hero{
+        height: 25rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+        align-items: center;  
+        position: relative;
+    }    
+    .hero-image-app{
+    max-height: 10rem;
+    position: absolute;
+    bottom: 0;
     }
-
-    
-    .feature__text p{
-        max-width: 50%;
-
+    .hero-texto{
+        font-family: 'Verdana', sans-serif;
+        font-size: 0.7rem;
+        color: #A4B2BB;
+        max-width: 10rem;
+        line-height: 150%;
+        text-align: center;
+        margin-top: -0.7rem;
     }
-
-    .feature__content{
-        margin-right: 5%;
-        margin-left: 15%;
+    h1{
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        color: #000000;
+        letter-spacing: 0.1rem;
+        text-align: center;
     }
-}
-
-
-
-.feature__icon--start {
-    align-self: flex-start;
-    width: 80%;
-    margin-top: 2.5rem;
-    transform: translateX(-1.5rem);
-}
-
-/* tablet and desktop */
-@media (min-width: 768px) {
-    
-    .feature--reverse{
-        flex-direction: row-reverse;
-        padding: 0 2rem 0 0;
-    }
-    
 }
