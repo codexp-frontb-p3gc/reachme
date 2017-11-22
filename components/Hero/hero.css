@@ -12,7 +12,8 @@ html, body{
     /*background-color: rgb(209, 236, 135);  /*cor só pra testar o entendimento, hehehe*/    
     background-image: url(hero_BG_W_1440xH568.jpg);
     background-position: right bottom; 
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    position: relative;
 }
 h1{
     font-family: 'Rubik', sans-serif;
@@ -33,9 +34,8 @@ h1{
 .hero-image-app{
     max-width: 40%; /*não está funcionando muito bem*/
     max-height: 23.5rem; /*não está funcionando muito bem*/
-    position: relative; /*tentei usar pra deixar ela colada no chão da div e não funcionou*/
-    margin-bottom: 0; 
-    padding-bottom: 0; 
+    position: absolute;
+    align-self: flex-end;
 }
 
 /* sei que não era pra isso estar aqui abaixo, mas não consegui aplicar o botão direto, se vocês conseguirem, arrancam daqui e me ensinam, por favor?*/
@@ -61,4 +61,86 @@ h1{
     bottom: 0;
     z-index: initial;
     flex-wrap: wrap;
-} */
+} 
+
+@media(min-width: 768px) {
+    /* .feature {
+        display: flex;
+        flex-flow: row;
+        padding: 2rem 2rem 1.5rem 1.5rem;
+    }     
+    .hero-image-app{
+        max-width: 90%; 
+        max-height: 20rem; 
+        position: relative; 
+        object-position: 0; 
+        padding-bottom: 0; 
+
+    .big-feature{
+        background-size: 100%;
+    }
+
+    .feature {
+        margin: 5rem 0;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 0 0 2rem;
+    }
+
+
+    .feature__text {
+        max-width: 50%;
+        margin-right: 10%;
+    }
+
+    .feature__icon--end{
+        align-self: auto;
+        width: 100%;
+        margin-top: 0;
+        transform: translateX(0);
+    }
+    
+    .feature--reverse{
+        flex-direction: row-reverse;
+        padding: 0 2rem 0 0;
+    }
+
+}
+
+@media(min-width: 992px) {
+    .feature__icon--end{
+        width: auto;
+        margin-right: 15%;
+        
+    }
+
+    
+    .feature__text p{
+        max-width: 50%;
+
+    }
+
+    .feature__content{
+        margin-right: 5%;
+        margin-left: 15%;
+    }
+}
+
+
+
+.feature__icon--start {
+    align-self: flex-start;
+    width: 80%;
+    margin-top: 2.5rem;
+    transform: translateX(-1.5rem);
+}
+
+/* tablet and desktop */
+@media (min-width: 768px) {
+    
+    .feature--reverse{
+        flex-direction: row-reverse;
+        padding: 0 2rem 0 0;
+    }
+    
+}
